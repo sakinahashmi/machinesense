@@ -1,0 +1,146 @@
+maintenance_id,machine_id,tool_id,date,maintenance_type,cycle_count,technician_note,status
+MNT-1001,CNC-01,T-01,2026-03-21,Routine Inspection,1478,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1002,CNC-01,T-18,2026-03-28,Routine Inspection,1423,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1003,CNC-01,T-10,2026-04-06,Tool Replacement,1293,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1004,CNC-01,T-11,2026-04-17,Axis Calibration,1455,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1005,CNC-01,T-09,2026-04-24,Axis Calibration,1471,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1006,CNC-01,T-07,2026-05-03,Spindle Lubrication,1329,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1007,CNC-01,T-02,2026-05-13,Routine Inspection,1213,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1008,CNC-01,T-05,2026-05-21,Tool Replacement,1471,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1009,CNC-01,T-10,2026-05-29,Axis Calibration,1228,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1010,CNC-01,T-13,2026-06-07,Tool Replacement,1397,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1011,CNC-01,T-07,2026-06-15,Axis Calibration,1543,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1012,CNC-01,T-18,2026-06-27,Coolant Filter Replacement,1487,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1013,CNC-01,T-17,2026-07-05,Axis Calibration,974,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1014,CNC-01,T-06,2026-07-12,Axis Calibration,899,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1015,CNC-01,T-05,2026-07-22,Axis Calibration,1542,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1016,CNC-01,T-06,2026-07-30,Axis Calibration,1470,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1017,CNC-01,T-08,2026-08-12,Axis Calibration,1028,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1018,CNC-01,T-14,2026-08-19,Axis Calibration,1180,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1019,CNC-02,T-19,2026-03-19,Axis Calibration,1274,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1020,CNC-02,T-16,2026-03-30,Tool Replacement,1449,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1021,CNC-02,T-19,2026-04-04,Routine Inspection,872,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1022,CNC-02,T-07,2026-04-14,Routine Inspection,922,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1023,CNC-02,T-17,2026-04-23,Axis Calibration,1223,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1024,CNC-02,T-05,2026-05-05,Spindle Lubrication,1005,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1025,CNC-02,T-14,2026-05-12,Routine Inspection,1268,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1026,CNC-02,T-11,2026-05-22,Spindle Lubrication,882,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1027,CNC-02,T-11,2026-05-29,Spindle Lubrication,1120,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1028,CNC-02,T-01,2026-06-10,Coolant Filter Replacement,1080,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1029,CNC-02,T-06,2026-06-18,Routine Inspection,962,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1030,CNC-02,T-03,2026-06-25,Spindle Lubrication,1429,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1031,CNC-02,T-14,2026-07-04,Coolant Filter Replacement,1239,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1032,CNC-02,T-13,2026-07-13,Tool Replacement,838,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1033,CNC-02,T-07,2026-07-21,Axis Calibration,814,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1034,CNC-02,T-17,2026-08-01,Spindle Lubrication,818,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1035,CNC-02,T-08,2026-08-12,Spindle Lubrication,1510,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1036,CNC-02,T-10,2026-08-19,Spindle Lubrication,905,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1037,CNC-03,T-17,2026-03-18,Routine Inspection,1113,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1038,CNC-03,T-03,2026-03-29,Tool Replacement,1105,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1039,CNC-03,T-15,2026-04-06,Routine Inspection,1410,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1040,CNC-03,T-11,2026-04-13,Coolant Filter Replacement,1503,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1041,CNC-03,T-11,2026-04-25,Coolant Filter Replacement,1167,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1042,CNC-03,T-06,2026-05-04,Coolant Filter Replacement,819,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1043,CNC-03,T-08,2026-05-13,Spindle Lubrication,1016,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1044,CNC-03,T-19,2026-05-23,Routine Inspection,973,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1045,CNC-03,T-12,2026-06-01,Tool Replacement,1184,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1046,CNC-03,T-18,2026-06-08,Routine Inspection,849,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1047,CNC-03,T-02,2026-06-15,Tool Replacement,1469,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1048,CNC-03,T-02,2026-06-28,Tool Replacement,1226,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1049,CNC-03,T-13,2026-07-04,Tool Replacement,1360,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1050,CNC-03,T-16,2026-07-14,Spindle Lubrication,1010,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1051,CNC-03,T-10,2026-07-25,Coolant Filter Replacement,1477,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1052,CNC-03,T-17,2026-08-03,Axis Calibration,1437,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1053,CNC-03,T-05,2026-08-08,Coolant Filter Replacement,907,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1054,CNC-03,T-20,2026-08-17,Tool Replacement,1089,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1055,CNC-04,T-04,2026-03-21,Coolant Filter Replacement,1003,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1056,CNC-04,T-07,2026-03-26,Axis Calibration,1335,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1057,CNC-04,T-12,2026-04-07,Coolant Filter Replacement,1102,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1058,CNC-04,T-02,2026-04-16,Routine Inspection,1308,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1059,CNC-04,T-16,2026-04-25,Axis Calibration,1040,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1060,CNC-04,T-01,2026-05-05,Tool Replacement,913,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1061,CNC-04,T-16,2026-05-10,Spindle Lubrication,892,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1062,CNC-04,T-03,2026-05-19,Tool Replacement,1062,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1063,CNC-04,T-15,2026-05-31,Axis Calibration,1070,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1064,CNC-04,T-02,2026-06-07,Tool Replacement,978,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1065,CNC-04,T-10,2026-06-19,Axis Calibration,1493,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1066,CNC-04,T-14,2026-06-26,Tool Replacement,897,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1067,CNC-04,T-01,2026-07-07,Spindle Lubrication,1479,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1068,CNC-04,T-11,2026-07-15,Axis Calibration,1248,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1069,CNC-04,T-09,2026-07-21,Tool Replacement,1181,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1070,CNC-04,T-06,2026-08-01,Tool Replacement,1210,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1071,CNC-04,T-15,2026-08-09,Axis Calibration,1194,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1072,CNC-04,T-14,2026-08-18,Spindle Lubrication,915,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1073,CNC-05,T-02,2026-03-20,Spindle Lubrication,906,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1074,CNC-05,T-19,2026-03-27,Coolant Filter Replacement,1382,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1075,CNC-05,T-06,2026-04-05,Routine Inspection,1188,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1076,CNC-05,T-20,2026-04-15,Tool Replacement,1500,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1077,CNC-05,T-16,2026-04-25,Coolant Filter Replacement,915,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1078,CNC-05,T-15,2026-05-02,Tool Replacement,864,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1079,CNC-05,T-11,2026-05-12,Tool Replacement,1521,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1080,CNC-05,T-19,2026-05-19,Routine Inspection,1029,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1081,CNC-05,T-17,2026-05-30,Routine Inspection,1504,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1082,CNC-05,T-04,2026-06-06,Coolant Filter Replacement,1477,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1083,CNC-05,T-16,2026-06-18,Axis Calibration,1479,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1084,CNC-05,T-05,2026-06-25,Routine Inspection,1427,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1085,CNC-05,T-01,2026-07-07,Spindle Lubrication,1317,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1086,CNC-05,T-16,2026-07-13,Spindle Lubrication,876,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1087,CNC-05,T-11,2026-07-22,Spindle Lubrication,1138,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1088,CNC-05,T-02,2026-08-01,Routine Inspection,1028,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1089,CNC-05,T-13,2026-08-08,Coolant Filter Replacement,1040,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1090,CNC-05,T-15,2026-08-21,Coolant Filter Replacement,1386,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1091,CNC-06,T-03,2026-03-18,Coolant Filter Replacement,1257,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1092,CNC-06,T-04,2026-03-28,Coolant Filter Replacement,1469,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1093,CNC-06,T-04,2026-04-08,Coolant Filter Replacement,1222,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1094,CNC-06,T-18,2026-04-17,Routine Inspection,800,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1095,CNC-06,T-20,2026-04-26,Routine Inspection,1452,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1096,CNC-06,T-17,2026-05-03,Routine Inspection,1011,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1097,CNC-06,T-11,2026-05-11,Axis Calibration,855,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1098,CNC-06,T-15,2026-05-22,Axis Calibration,1373,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1099,CNC-06,T-20,2026-05-28,Coolant Filter Replacement,1533,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1100,CNC-06,T-15,2026-06-08,Tool Replacement,899,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1101,CNC-06,T-01,2026-06-18,Axis Calibration,1163,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1102,CNC-06,T-18,2026-06-26,Routine Inspection,1182,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1103,CNC-06,T-02,2026-07-07,Spindle Lubrication,1304,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1104,CNC-06,T-14,2026-07-15,Tool Replacement,1060,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1105,CNC-06,T-07,2026-07-21,Spindle Lubrication,923,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1106,CNC-06,T-07,2026-07-31,Coolant Filter Replacement,995,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1107,CNC-06,T-04,2026-08-10,Coolant Filter Replacement,847,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1108,CNC-06,T-04,2026-08-17,Coolant Filter Replacement,1268,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1109,CNC-07,T-17,2026-03-17,Spindle Lubrication,1310,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1110,CNC-07,T-17,2026-03-30,Tool Replacement,1366,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1111,CNC-07,T-19,2026-04-05,Coolant Filter Replacement,1320,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1112,CNC-07,T-19,2026-04-16,Spindle Lubrication,1548,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1113,CNC-07,T-04,2026-04-25,Coolant Filter Replacement,1473,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1114,CNC-07,T-20,2026-05-01,Axis Calibration,1316,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1115,CNC-07,T-14,2026-08-25,Tool Replacement,0,Installed fresh Carbide TiAlN End Mill T-14. Reset baseline offset.,Completed
+MNT-1116,CNC-07,T-09,2026-05-22,Coolant Filter Replacement,1151,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1117,CNC-07,T-15,2026-05-30,Spindle Lubrication,941,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1118,CNC-07,T-20,2026-06-07,Routine Inspection,1106,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1119,CNC-07,T-11,2026-06-15,Routine Inspection,1447,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1120,CNC-07,T-07,2026-06-27,Spindle Lubrication,1439,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1121,CNC-07,T-12,2026-07-05,Spindle Lubrication,1527,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1122,CNC-07,T-17,2026-07-15,Routine Inspection,1510,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1123,CNC-07,T-04,2026-07-23,Axis Calibration,1375,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1124,CNC-07,T-19,2026-07-31,Routine Inspection,1483,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1125,CNC-07,T-18,2026-08-09,Axis Calibration,1232,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1126,CNC-07,T-17,2026-08-21,Tool Replacement,825,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1127,CNC-08,T-05,2026-03-18,Tool Replacement,1486,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1128,CNC-08,T-07,2026-03-30,Axis Calibration,964,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1129,CNC-08,T-09,2026-04-06,Spindle Lubrication,863,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1130,CNC-08,T-07,2026-04-15,Routine Inspection,833,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1131,CNC-08,T-15,2026-04-24,Tool Replacement,1430,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1132,CNC-08,T-08,2026-05-01,Routine Inspection,1198,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1133,CNC-08,T-17,2026-05-13,Axis Calibration,1509,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1134,CNC-08,T-13,2026-05-23,Coolant Filter Replacement,1226,Routine coolant filter replacement performed according to standard SOP.,Completed
+MNT-1135,CNC-08,T-18,2026-05-30,Tool Replacement,813,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1136,CNC-08,T-07,2026-06-08,Routine Inspection,1253,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1137,CNC-08,T-12,2026-06-18,Routine Inspection,1359,Routine routine inspection performed according to standard SOP.,Completed
+MNT-1138,CNC-08,T-07,2026-06-24,Spindle Lubrication,1101,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1139,CNC-08,T-06,2026-07-04,Tool Replacement,991,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1140,CNC-08,T-17,2026-07-15,Tool Replacement,1186,Routine tool replacement performed according to standard SOP.,Completed
+MNT-1141,CNC-08,T-14,2026-07-25,Axis Calibration,1369,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1142,CNC-08,T-05,2026-08-01,Spindle Lubrication,1398,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1143,CNC-08,T-01,2026-08-10,Axis Calibration,1277,Routine axis calibration performed according to standard SOP.,Completed
+MNT-1144,CNC-08,T-02,2026-08-20,Spindle Lubrication,1130,Routine spindle lubrication performed according to standard SOP.,Completed
+MNT-1145,CNC-07,T-14,2026-09-13,Tool Wear Inspection & Replacement,1842,OVERDUE: Tool cycle count (1842) exceeded manufacturer 1500 threshold. Flank wear visible on cutting edge.,Overdue
