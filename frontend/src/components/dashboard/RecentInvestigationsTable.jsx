@@ -19,7 +19,7 @@ export default function RecentInvestigationsTable({ investigations = [] }) {
         </div>
         <button
           onClick={() => navigate('/investigations')}
-          className="text-xs font-medium text-amber-700 hover:text-amber-800 transition-colors"
+          className="text-xs font-medium text-[#356B7A] hover:text-[#285664] transition-colors"
         >
           Investigation Workspace →
         </button>
@@ -47,7 +47,7 @@ export default function RecentInvestigationsTable({ investigations = [] }) {
                 className="cursor-pointer"
                 onClick={() => navigate(`/investigations?comp=${inv.component_id}`)}
               >
-                <td className="font-mono font-medium text-amber-800">{inv.investigation_id}</td>
+                <td className="font-mono font-medium text-[#356B7A]">{inv.investigation_id}</td>
                 <td className="font-mono font-semibold text-slate-900">{inv.component_id}</td>
                 <td className="font-mono text-slate-700">{inv.machine_id}</td>
                 <td className="text-slate-700">{inv.failure_type}</td>

@@ -33,7 +33,7 @@ export default function HistoricalMatchCard({ matches = [] }) {
           <tbody>
             {matches.map((item) => (
               <tr key={item.case_id}>
-                <td className="font-mono font-medium text-amber-800">{item.case_id}</td>
+                <td className="font-mono font-medium text-[#356B7A]">{item.case_id}</td>
                 <td className="font-mono text-slate-800">{item.machine_id}</td>
                 <td className="text-slate-600">{item.failure_type}</td>
                 <td className="font-medium text-slate-900">{item.root_cause}</td>

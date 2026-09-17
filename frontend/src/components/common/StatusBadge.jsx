@@ -3,21 +3,21 @@ import React from 'react';
 export default function StatusBadge({ status, size = 'sm', className = '' }) {
   const norm = String(status || '').toLowerCase();
   
-  let styles = 'bg-slate-100 text-slate-700 border-slate-200';
-  let dotColor = 'bg-slate-500';
+  let styles = 'bg-[#F4F6F8] text-[#465563] border-[#D8E0E6]';
+  let dotColor = 'bg-[#667685]';
 
   if (norm === 'critical' || norm === 'fail' || norm === 'overdue' || norm === 'high') {
-    styles = 'bg-red-50 text-red-700 border-red-200 font-medium';
-    dotColor = 'bg-red-600';
+    styles = 'bg-[#F9EBEB] text-[#C34B4B] border-[#F2CDCD] font-medium';
+    dotColor = 'bg-[#C34B4B]';
   } else if (norm === 'warning' || norm === 'medium-high' || norm === 'medium') {
-    styles = 'bg-amber-50 text-amber-800 border-amber-200 font-medium';
-    dotColor = 'bg-amber-600';
+    styles = 'bg-[#FAF4E8] text-[#C58A20] border-[#F0DEC0] font-medium';
+    dotColor = 'bg-[#C58A20]';
   } else if (norm === 'nominal' || norm === 'pass' || norm === 'completed' || norm === 'healthy' || norm === 'online' || norm === 'high confidence') {
-    styles = 'bg-emerald-50 text-emerald-800 border-emerald-200 font-medium';
-    dotColor = 'bg-emerald-600';
+    styles = 'bg-[#E9F5F0] text-[#23805A] border-[#C6E6D8] font-medium';
+    dotColor = 'bg-[#23805A]';
   } else if (norm === 'info' || norm === 'running' || norm === 'investigated' || norm === 'standard') {
-    styles = 'bg-blue-50 text-blue-700 border-blue-200 font-medium';
-    dotColor = 'bg-blue-600';
+    styles = 'bg-[#F4F6F8] text-[#465563] border-[#D8E0E6] font-medium';
+    dotColor = 'bg-[#667685]';
   }
 
   const sizeClasses = size === 'xs' 

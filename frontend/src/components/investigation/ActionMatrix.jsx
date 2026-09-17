@@ -25,7 +25,7 @@ export default function ActionMatrix({ actions = [] }) {
         {/* Immediate Actions */}
         <div className="p-4 space-y-3">
           <div className="flex items-center gap-2 pb-2 border-b border-slate-200">
-            <span className="w-2 h-2 rounded-full bg-red-600" />
+            <span className="w-2 h-2 rounded-full bg-[#C34B4B]" />
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900">
               Immediate Actions (Containment & Tooling)
             </h4>
@@ -65,7 +65,7 @@ export default function ActionMatrix({ actions = [] }) {
         {/* Preventive Actions */}
         <div className="p-4 space-y-3">
           <div className="flex items-center gap-2 pb-2 border-b border-slate-200">
-            <span className="w-2 h-2 rounded-full bg-blue-600" />
+            <span className="w-2 h-2 rounded-full bg-[#356B7A]" />
             <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900">
               Preventive Actions (Process Optimization)
             </h4>

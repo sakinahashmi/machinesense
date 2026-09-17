@@ -33,13 +33,13 @@ export default function MachineTelemetryModal({ machine, onClose }) {
         <div className="p-5 space-y-5">
           {/* Active Alerts */}
           {machine.active_alerts && machine.active_alerts.length > 0 && (
-            <div className="p-3 rounded bg-red-50 border border-red-200 space-y-1">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-red-800 uppercase">
-                <AlertTriangle className="w-4 h-4 text-red-600" />
+            <div className="p-3 rounded bg-[#F9EBEB] border border-[#F2CDCD] space-y-1">
+              <div className="flex items-center gap-1.5 text-xs font-bold text-[#C34B4B] uppercase">
+                <AlertTriangle className="w-4 h-4 text-[#C34B4B]" />
                 Active Alerts
               </div>
               {machine.active_alerts.map((al, idx) => (
-                <p key={idx} className="text-xs text-red-700 font-mono pl-5">
+                <p key={idx} className="text-xs text-[#C34B4B] font-mono pl-5">
                   • {al}
                 </p>
               ))}
@@ -50,7 +50,7 @@ export default function MachineTelemetryModal({ machine, onClose }) {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
             <div className="p-3 rounded bg-slate-50 border border-slate-200">
               <span className="text-slate-500 block text-[11px] uppercase">Vibration RMS</span>
-              <span className={`text-base font-mono font-bold ${machine.latest_telemetry?.vibration > 2.0 ? 'text-red-700' : 'text-slate-900'}`}>
+              <span className={`text-base font-mono font-bold ${machine.latest_telemetry?.vibration > 2.0 ? 'text-[#C34B4B]' : 'text-slate-900'}`}>
                 {machine.latest_telemetry?.vibration || machine.nominal_vib} mm/s
               </span>
             </div>
@@ -68,7 +68,7 @@ export default function MachineTelemetryModal({ machine, onClose }) {
             </div>
             <div className="p-3 rounded bg-slate-50 border border-slate-200">
               <span className="text-slate-500 block text-[11px] uppercase">Current Tool</span>
-              <span className="text-base font-mono font-bold text-amber-800">
+              <span className="text-base font-mono font-bold text-[#356B7A]">
                 {machine.current_tool}
               </span>
             </div>
@@ -82,14 +82,14 @@ export default function MachineTelemetryModal({ machine, onClose }) {
             <div className="h-44 w-full bg-white p-2 rounded border border-slate-200">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={telemetry.slice(-25)}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#E2E8F0" vertical={false} />
-                  <XAxis dataKey="timestamp" stroke="#64748B" tick={{ fontSize: 9 }} tickFormatter={(t) => t.slice(11, 16)} />
-                  <YAxis stroke="#64748B" tick={{ fontSize: 9 }} domain={[0, 4.5]} />
+                  <CartesianGrid strokeDasharray="3 3" stroke="#D8E0E6" vertical={false} />
+                  <XAxis dataKey="timestamp" stroke="#667685" tick={{ fontSize: 9 }} tickFormatter={(t) => t.slice(11, 16)} />
+                  <YAxis stroke="#667685" tick={{ fontSize: 9 }} domain={[0, 4.5]} />
                   <Tooltip 
-                    contentStyle={{ backgroundColor: '#FFFFFF', borderColor: '#CBD5E1', fontSize: '11px', fontFamily: 'monospace' }}
+                    contentStyle={{ backgroundColor: '#FFFFFF', borderColor: '#D8E0E6', fontSize: '11px', fontFamily: 'monospace' }}
                   />
-                  <ReferenceLine y={2.0} stroke="#DC2626" strokeDasharray="3 3" label={{ value: '2.0 mm/s limit', fill: '#DC2626', fontSize: 9 }} />
-                  <Line type="monotone" dataKey="vibration" stroke="#2563EB" strokeWidth={2} dot={false} />
+                  <ReferenceLine y={2.0} stroke="#C34B4B" strokeDasharray="3 3" label={{ value: '2.0 mm/s limit', fill: '#C34B4B', fontSize: 9 }} />
+                  <Line type="monotone" dataKey="vibration" stroke="#5C6F7E" strokeWidth={2} dot={false} />
                 </LineChart>
               </ResponsiveContainer>
             </div>

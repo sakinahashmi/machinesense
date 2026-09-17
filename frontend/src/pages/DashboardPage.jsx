@@ -138,13 +138,13 @@ export default function DashboardPage() {
           <div className="h-44 w-full">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={passRateTrend} margin={{ top: 5, right: 20, left: -20, bottom: 0 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#E2E8F0" vertical={false} />
-                <XAxis dataKey="date" stroke="#64748B" tick={{ fontSize: 11 }} />
-                <YAxis stroke="#64748B" domain={[90, 100]} tick={{ fontSize: 11 }} />
+                <CartesianGrid strokeDasharray="3 3" stroke="#D8E0E6" vertical={false} />
+                <XAxis dataKey="date" stroke="#667685" tick={{ fontSize: 11 }} />
+                <YAxis stroke="#667685" domain={[90, 100]} tick={{ fontSize: 11 }} />
                 <Tooltip 
-                  contentStyle={{ backgroundColor: '#FFFFFF', borderColor: '#CBD5E1', fontSize: '11px', borderRadius: '4px' }}
+                  contentStyle={{ backgroundColor: '#FFFFFF', borderColor: '#D8E0E6', fontSize: '11px', borderRadius: '4px' }}
                 />
-                <Line type="monotone" dataKey="pass_rate" name="Pass Rate (%)" stroke="#D97706" strokeWidth={2} dot={{ r: 3, fill: '#D97706' }} />
+                <Line type="monotone" dataKey="pass_rate" name="Pass Rate (%)" stroke="#356B7A" strokeWidth={2} dot={{ r: 3, fill: '#356B7A' }} />
               </LineChart>
             </ResponsiveContainer>
           </div>

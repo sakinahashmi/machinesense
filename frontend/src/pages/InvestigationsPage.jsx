@@ -124,7 +124,7 @@ export default function InvestigationsPage() {
               value={componentId}
               onChange={(e) => setComponentId(e.target.value)}
               placeholder="e.g. CNC-2847"
-              className="w-full bg-white border border-slate-300 rounded px-2.5 py-1.5 text-xs font-mono text-slate-900 focus:outline-none focus:border-amber-600"
+              className="w-full bg-white border border-slate-300 rounded px-2.5 py-1.5 text-xs font-mono text-slate-900 focus:outline-none focus:border-[#356B7A]"
             />
           </div>
 
@@ -135,7 +135,7 @@ export default function InvestigationsPage() {
             <select
               value={machineId}
               onChange={(e) => setMachineId(e.target.value)}
-              className="w-full bg-white border border-slate-300 rounded px-2.5 py-1.5 text-xs font-mono text-slate-900 focus:outline-none focus:border-amber-600"
+              className="w-full bg-white border border-slate-300 rounded px-2.5 py-1.5 text-xs font-mono text-slate-900 focus:outline-none focus:border-[#356B7A]"
             >
               {MACHINES_LIST.map((m) => (
                 <option key={m} value={m}>
@@ -152,7 +152,7 @@ export default function InvestigationsPage() {
             <select
               value={failureType}
               onChange={(e) => setFailureType(e.target.value)}
-              className="w-full bg-white border border-slate-300 rounded px-2.5 py-1.5 text-xs text-slate-900 focus:outline-none focus:border-amber-600"
+              className="w-full bg-white border border-slate-300 rounded px-2.5 py-1.5 text-xs text-slate-900 focus:outline-none focus:border-[#356B7A]"
             >
               {FAILURE_TYPES.map((f) => (
                 <option key={f} value={f}>
@@ -177,8 +177,8 @@ export default function InvestigationsPage() {
 
       {/* Error Alert */}
       {error && (
-        <div className="p-3 rounded bg-red-50 border border-red-200 text-xs text-red-700 flex items-center gap-2">
-          <AlertTriangle className="w-4 h-4 text-red-600 shrink-0" />
+        <div className="p-3 rounded bg-[#F9EBEB] border border-[#F2CDCD] text-xs text-[#C34B4B] flex items-center gap-2">
+          <AlertTriangle className="w-4 h-4 text-[#C34B4B] shrink-0" />
           <span>{error}</span>
         </div>
       )}

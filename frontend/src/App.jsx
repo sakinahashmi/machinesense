@@ -12,7 +12,7 @@ import AIInsightsPage from './pages/AIInsightsPage';
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="flex min-h-screen bg-[#F5F6F8] text-slate-900 font-sans antialiased">
+      <div className="flex min-h-screen bg-[#F4F6F8] text-slate-900 font-sans antialiased">
         {/* Sidebar */}
         <Sidebar />
 

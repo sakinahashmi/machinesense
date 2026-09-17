@@ -65,7 +65,7 @@ export default function MachinesPage() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search machine, model..."
-              className="bg-white border border-slate-300 rounded pl-8 pr-2.5 py-1 text-xs font-mono text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-amber-600"
+              className="bg-white border border-slate-300 rounded pl-8 pr-2.5 py-1 text-xs font-mono text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#356B7A]"
             />
           </div>
 
@@ -135,7 +135,7 @@ export default function MachinesPage() {
                         <div className="w-16 h-1.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
                           <div
                             className={`h-full ${
-                              isCritical ? 'bg-red-600' : isWarning ? 'bg-amber-500' : 'bg-emerald-600'
+                              isCritical ? 'bg-[#C34B4B]' : isWarning ? 'bg-[#C58A20]' : 'bg-[#23805A]'
                             }`}
                             style={{ width: `${m.health_score}%` }}
                           />
@@ -146,7 +146,7 @@ export default function MachinesPage() {
                       </div>
                     </td>
                     <td className="font-mono font-medium text-slate-800">{m.current_tool}</td>
-                    <td className={`font-mono ${m.vibration > 2.0 ? 'text-red-700 font-semibold' : 'text-slate-700'}`}>
+                    <td className={`font-mono ${m.vibration > 2.0 ? 'text-[#C34B4B] font-semibold' : 'text-slate-700'}`}>
                       {m.vibration} mm/s
                     </td>
                     <td className="font-mono text-slate-700">{m.power_consumption} kW</td>
@@ -154,7 +154,7 @@ export default function MachinesPage() {
                     <td className="text-slate-500">{m.last_maintenance}</td>
                     <td>
                       {m.active_issues && m.active_issues.length > 0 ? (
-                        <span className="text-red-700 text-xs truncate max-w-[160px] block" title={m.active_issues[0]}>
+                        <span className="text-[#C34B4B] text-xs truncate max-w-[160px] block" title={m.active_issues[0]}>
                           {m.active_issues[0]}
                         </span>
                       ) : (

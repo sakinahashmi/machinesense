@@ -28,7 +28,7 @@ export default function Navbar() {
           <input
             type="text"
             placeholder="Search component (e.g. CNC-2847), machine ID, or work order..."
-            className="w-full bg-white border border-slate-200 rounded pl-8 pr-3 py-1 text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-amber-600 font-mono transition-colors"
+            className="w-full bg-white border border-slate-200 rounded pl-8 pr-3 py-1 text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#356B7A] font-mono transition-colors"
           />
         </div>
       </div>
@@ -47,13 +47,13 @@ export default function Navbar() {
           title="Active Alerts"
         >
           <Bell className="w-4 h-4" />
-          <span className="absolute top-1 right-1 w-2 h-2 rounded-full bg-amber-600" />
+          <span className="absolute top-1 right-1 w-2 h-2 rounded-full bg-[#C87916]" />
         </button>
 
         {/* User Info */}
         <div className="flex items-center gap-2 pl-3 border-l border-slate-200">
-          <div className="w-6 h-6 rounded bg-slate-200 flex items-center justify-center text-slate-700 text-xs font-semibold">
-            <User className="w-3.5 h-3.5 text-slate-600" />
+          <div className="w-6 h-6 rounded bg-[#E8F0F2] border border-[#D8E0E6] flex items-center justify-center text-[#356B7A] text-xs font-semibold">
+            <User className="w-3.5 h-3.5 text-[#356B7A]" />
           </div>
           <div className="text-left hidden sm:block">
             <p className="text-xs font-medium text-slate-900 leading-tight">Quality Engineering</p>

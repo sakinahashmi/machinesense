@@ -22,7 +22,7 @@ export default function InvestigationHeader({ investigation }) {
   };
 
   return (
-    <div className="enterprise-card p-5 border-l-4 border-l-red-600">
+    <div className="enterprise-card p-5 border-l-4 border-l-[#C34B4B]">
       <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-4">
         {/* Left: Metadata & Inspection Data */}
         <div className="space-y-3 flex-1">
@@ -44,7 +44,7 @@ export default function InvestigationHeader({ investigation }) {
               <span className="text-slate-700">{investigation.machine_id}</span>
             </h2>
             <p className="text-xs font-medium text-slate-600 mt-0.5">
-              Failure Mode: <span className="text-red-700 font-semibold">{investigation.failure_type}</span>
+              Failure Mode: <span className="text-[#C34B4B] font-semibold">{investigation.failure_type}</span>
             </p>
           </div>
 
@@ -62,13 +62,13 @@ export default function InvestigationHeader({ investigation }) {
             </div>
             <div>
               <span className="text-[11px] text-slate-500 block uppercase">Measured Value</span>
-              <span className="font-mono font-bold text-red-700">
+              <span className="font-mono font-bold text-[#C34B4B]">
                 {insp.actual_value || 25.42} mm
               </span>
             </div>
             <div>
               <span className="text-[11px] text-slate-500 block uppercase">Deviation</span>
-              <span className="font-mono font-bold text-red-700">
+              <span className="font-mono font-bold text-[#C34B4B]">
                 +{insp.deviation || 0.420} mm
               </span>
             </div>
@@ -81,7 +81,7 @@ export default function InvestigationHeader({ investigation }) {
             onClick={handleCopySummary}
             className="btn-secondary text-xs"
           >
-            {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5 text-slate-500" />}
+            {copied ? <Check className="w-3.5 h-3.5 text-[#23805A]" /> : <Copy className="w-3.5 h-3.5 text-slate-500" />}
             <span>{copied ? 'Copied' : 'Copy Report'}</span>
           </button>
           

@@ -19,7 +19,7 @@ export default function MachineHealthGrid({ machines = [], onSelectMachine }) {
         </div>
         <button 
           onClick={() => navigate('/machines')}
-          className="text-xs font-medium text-amber-700 hover:text-amber-800 transition-colors"
+          className="text-xs font-medium text-[#356B7A] hover:text-[#285664] transition-colors"
         >
           View All Machines →
         </button>
@@ -62,7 +62,7 @@ export default function MachineHealthGrid({ machines = [], onSelectMachine }) {
                       <div className="w-16 h-1.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
                         <div
                           className={`h-full ${
-                            isCritical ? 'bg-red-600' : isWarning ? 'bg-amber-500' : 'bg-emerald-600'
+                            isCritical ? 'bg-[#C34B4B]' : isWarning ? 'bg-[#C58A20]' : 'bg-[#23805A]'
                           }`}
                           style={{ width: `${m.health_score}%` }}
                         />
@@ -73,14 +73,14 @@ export default function MachineHealthGrid({ machines = [], onSelectMachine }) {
                     </div>
                   </td>
                   <td className="font-mono text-slate-700">{m.current_tool}</td>
-                  <td className={`font-mono ${m.vibration > 2.0 ? 'text-red-700 font-semibold' : 'text-slate-700'}`}>
+                  <td className={`font-mono ${m.vibration > 2.0 ? 'text-[#C34B4B] font-semibold' : 'text-slate-700'}`}>
                     {m.vibration} mm/s
                   </td>
                   <td className="font-mono text-slate-700">{m.temperature} °C</td>
                   <td className="text-slate-500">{m.last_maintenance}</td>
                   <td>
                     {m.active_issues && m.active_issues.length > 0 ? (
-                      <span className="text-red-700 text-xs truncate max-w-[180px] block" title={m.active_issues[0]}>
+                      <span className="text-[#C34B4B] text-xs truncate max-w-[180px] block" title={m.active_issues[0]}>
                         {m.active_issues[0]}
                       </span>
                     ) : (

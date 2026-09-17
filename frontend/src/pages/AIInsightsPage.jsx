@@ -47,7 +47,7 @@ export default function AIInsightsPage() {
           {patterns.map((pat) => (
             <div
               key={pat.id}
-              className="enterprise-card p-4 space-y-2.5 border-l-4 border-l-amber-600"
+              className="enterprise-card p-4 space-y-2.5 border-l-4 border-l-[#356B7A]"
             >
               <div className="flex items-center justify-between gap-2">
                 <span className="text-xs font-bold text-slate-800 uppercase">
@@ -94,13 +94,13 @@ export default function AIInsightsPage() {
             <div className="h-56 w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={distribution} layout="vertical" margin={{ top: 5, right: 20, left: 30, bottom: 5 }}>
-                  <CartesianGrid strokeDasharray="3 3" stroke="#E2E8F0" horizontal={false} />
-                  <XAxis type="number" stroke="#64748B" tick={{ fontSize: 10, fontFamily: 'monospace' }} unit="%" />
-                  <YAxis dataKey="name" type="category" stroke="#64748B" tick={{ fontSize: 10 }} width={80} />
+                  <CartesianGrid strokeDasharray="3 3" stroke="#D8E0E6" horizontal={false} />
+                  <XAxis type="number" stroke="#667685" tick={{ fontSize: 10, fontFamily: 'monospace' }} unit="%" />
+                  <YAxis dataKey="name" type="category" stroke="#667685" tick={{ fontSize: 10 }} width={80} />
                   <Tooltip
-                    contentStyle={{ backgroundColor: '#FFFFFF', borderColor: '#CBD5E1', fontSize: '11px', fontFamily: 'monospace' }}
+                    contentStyle={{ backgroundColor: '#FFFFFF', borderColor: '#D8E0E6', fontSize: '11px', fontFamily: 'monospace' }}
                   />
-                  <Bar dataKey="percentage" fill="#D97706" radius={[0, 2, 2, 0]} />
+                  <Bar dataKey="percentage" fill="#356B7A" radius={[0, 2, 2, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </div>

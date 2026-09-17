@@ -29,7 +29,7 @@ export default function LoadingOverlay({ isAnalyzing = false }) {
     <div className="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-[2px] flex items-center justify-center p-4">
       <div className="bg-white border border-slate-300 rounded-md p-6 max-w-md w-full shadow-lg">
         <div className="flex items-center gap-3 mb-4">
-          <Loader2 className="w-5 h-5 text-amber-600 animate-spin" />
+          <Loader2 className="w-5 h-5 text-[#356B7A] animate-spin" />
           <div>
             <h3 className="text-sm font-semibold text-slate-900">
               Processing Root Cause Investigation
@@ -50,13 +50,13 @@ export default function LoadingOverlay({ isAnalyzing = false }) {
               <div 
                 key={idx} 
                 className={`flex items-center gap-2 text-xs transition-colors ${
-                  isCurrent ? 'text-amber-800 font-medium' : isCompleted ? 'text-emerald-700' : 'text-slate-400'
+                  isCurrent ? 'text-[#356B7A] font-medium' : isCompleted ? 'text-[#23805A]' : 'text-slate-400'
                 }`}
               >
                 {isCompleted ? (
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#23805A] shrink-0" />
                 ) : (
-                  <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${isCurrent ? 'bg-amber-600 animate-pulse' : 'bg-slate-300'}`} />
+                  <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${isCurrent ? 'bg-[#356B7A] animate-pulse' : 'bg-slate-300'}`} />
                 )}
                 <span className="truncate">{label}</span>
               </div>

@@ -58,7 +58,7 @@ export default function HistoricalCasesPage() {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search by symptom, tool, machine..."
-            className="bg-white border border-slate-300 rounded pl-8 pr-2.5 py-1 text-xs font-mono text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-amber-600 w-64"
+            className="bg-white border border-slate-300 rounded pl-8 pr-2.5 py-1 text-xs font-mono text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#356B7A] w-64"
           />
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function HistoricalCasesPage() {
             onClick={() => setSelectedCause(rc)}
             className={`px-2.5 py-1 rounded text-xs transition-colors whitespace-nowrap ${
               selectedCause === rc
-                ? 'bg-slate-800 text-white font-semibold'
+                ? 'bg-[#356B7A] text-white font-semibold'
                 : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'
             }`}
           >
@@ -105,7 +105,7 @@ export default function HistoricalCasesPage() {
             <tbody>
               {cases.map((c) => (
                 <tr key={c.case_id}>
-                  <td className="font-mono font-medium text-amber-800">{c.case_id}</td>
+                  <td className="font-mono font-medium text-[#356B7A]">{c.case_id}</td>
                   <td className="font-mono font-semibold text-slate-900">{c.machine_id}</td>
                   <td className="text-slate-700">{c.failure_type}</td>
                   <td className="font-medium text-slate-900">{c.root_cause}</td>

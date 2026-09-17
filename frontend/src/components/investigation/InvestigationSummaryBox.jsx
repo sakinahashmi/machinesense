@@ -36,17 +36,17 @@ export default function InvestigationSummaryBox({ summary }) {
           onClick={handleCopy}
           className="btn-secondary text-xs"
         >
-          {copied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5 text-slate-500" />}
+          {copied ? <Check className="w-3.5 h-3.5 text-[#23805A]" /> : <Copy className="w-3.5 h-3.5 text-slate-500" />}
           <span>{copied ? 'Copied' : 'Copy Summary'}</span>
         </button>
       </div>
 
       {/* Core Finding */}
-      <div className="p-3 bg-amber-50 border border-amber-200 rounded text-xs mb-4">
-        <span className="text-amber-900 font-bold uppercase text-[11px] block mb-0.5">
+      <div className="p-3 bg-[#E8F0F2] border border-[#B8D2D9] rounded text-xs mb-4">
+        <span className="text-[#356B7A] font-bold uppercase text-[11px] block mb-0.5">
           Primary Diagnostic Finding
         </span>
-        <p className="text-amber-950 font-medium leading-relaxed">
+        <p className="text-slate-900 font-medium leading-relaxed">
           <strong>{summary.primary_root_cause}</strong> is identified as the most probable cause ({summary.confidence}% confidence) for the dimensional failure on component {summary.component_id}.
         </p>
       </div>
@@ -58,7 +58,7 @@ export default function InvestigationSummaryBox({ summary }) {
         </h4>
         <ul className="space-y-1.5 text-xs text-slate-700">
           {summary.key_evidence?.map((item, idx) => (
-            <li key={idx} className="flex items-start gap-2 bg-slate-50 p-2 rounded border border-slate-100">
+            <li key={idx} className="flex items-start gap-2 bg-slate-50 p-2 rounded border border-slate-200">
               <span className="text-slate-400 font-mono text-[11px] font-bold mt-0.5">{idx + 1}.</span>
               <span>{item}</span>
             </li>
@@ -77,7 +77,7 @@ export default function InvestigationSummaryBox({ summary }) {
       {/* Immediate vs Preventive Summary */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
         <div className="p-3 rounded bg-slate-50 border border-slate-200">
-          <span className="text-[11px] font-bold uppercase text-red-700 block mb-1">
+          <span className="text-[11px] font-bold uppercase text-[#C34B4B] block mb-1">
             Immediate Containment Action
           </span>
           <p className="text-slate-800 font-medium">{summary.recommended_immediate_action}</p>

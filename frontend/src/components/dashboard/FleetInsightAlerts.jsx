@@ -19,13 +19,13 @@ export default function FleetInsightAlerts({ insights = [] }) {
         </div>
         <button
           onClick={() => navigate('/insights')}
-          className="text-xs font-medium text-amber-700 hover:text-amber-800 transition-colors"
+          className="text-xs font-medium text-[#356B7A] hover:text-[#285664] transition-colors"
         >
           All Analysis Insights →
         </button>
       </div>
 
-      <div className="divide-y divide-slate-100">
+      <div className="divide-y divide-slate-200">
         {insights.map((ins) => (
           <div
             key={ins.id}

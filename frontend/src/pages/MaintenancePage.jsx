@@ -48,9 +48,9 @@ export default function MaintenancePage() {
 
       {/* Overdue Maintenance Section */}
       {alerts.length > 0 && (
-        <div className="enterprise-card border-l-4 border-l-red-600">
+        <div className="enterprise-card border-l-4 border-l-[#C34B4B]">
           <div className="p-4 border-b border-slate-200">
-            <h3 className="text-sm font-bold text-red-900">
+            <h3 className="text-sm font-bold text-[#C34B4B]">
               Overdue Maintenance Tickets ({alerts.length})
             </h3>
           </div>
@@ -72,16 +72,16 @@ export default function MaintenancePage() {
               </thead>
               <tbody>
                 {alerts.map((al) => (
-                  <tr key={al.alert_id} className="bg-red-50/40">
+                  <tr key={al.alert_id} className="bg-[#F9EBEB]/60">
                     <td className="font-mono font-medium text-slate-900">{al.alert_id}</td>
                     <td className="font-mono font-bold text-slate-900">{al.machine_id}</td>
-                    <td className="font-mono font-bold text-amber-900">{al.tool_id}</td>
+                    <td className="font-mono font-bold text-[#356B7A]">{al.tool_id}</td>
                     <td className="font-medium text-slate-900">{al.type}</td>
-                    <td className="font-mono font-bold text-red-700">{al.current_cycles}</td>
+                    <td className="font-mono font-bold text-[#C34B4B]">{al.current_cycles}</td>
                     <td className="font-mono text-slate-600">{al.max_threshold}</td>
-                    <td className="font-mono font-bold text-red-700">+{al.overdue_by_cycles} cycles</td>
+                    <td className="font-mono font-bold text-[#C34B4B]">+{al.overdue_by_cycles} cycles</td>
                     <td className="text-slate-600">{al.last_replaced}</td>
-                    <td className="text-red-800 font-medium">{al.action_required}</td>
+                    <td className="text-[#C34B4B] font-medium">{al.action_required}</td>
                   </tr>
                 ))}
               </tbody>
@@ -122,7 +122,7 @@ export default function MaintenancePage() {
                     <td className="font-mono font-bold text-slate-900">{t.tool_id}</td>
                     <td className="text-slate-700">{t.type}</td>
                     <td className="font-mono text-slate-800">{t.machine_id}</td>
-                    <td className={`font-mono ${isOver ? 'font-bold text-red-700' : 'text-slate-800'}`}>
+                    <td className={`font-mono ${isOver ? 'font-bold text-[#C34B4B]' : 'text-slate-800'}`}>
                       {t.cycles}
                     </td>
                     <td className="font-mono text-slate-500">{t.max_cycles}</td>
@@ -131,12 +131,12 @@ export default function MaintenancePage() {
                         <div className="w-24 h-1.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
                           <div
                             className={`h-full ${
-                              isOver ? 'bg-red-600' : isNear ? 'bg-amber-500' : 'bg-emerald-600'
+                              isOver ? 'bg-[#C34B4B]' : isNear ? 'bg-[#C58A20]' : 'bg-[#23805A]'
                             }`}
                             style={{ width: `${Math.min(100, t.wear_pct)}%` }}
                           />
                         </div>
-                        <span className={`font-mono text-xs font-semibold ${isOver ? 'text-red-700' : isNear ? 'text-amber-800' : 'text-slate-700'}`}>
+                        <span className={`font-mono text-xs font-semibold ${isOver ? 'text-[#C34B4B]' : isNear ? 'text-[#C58A20]' : 'text-slate-700'}`}>
                           {t.wear_pct}%
                         </span>
                       </div>
@@ -169,7 +169,7 @@ export default function MaintenancePage() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search maintenance logs..."
-              className="bg-white border border-slate-300 rounded pl-8 pr-2.5 py-1 text-xs font-mono text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-amber-600 w-64"
+              className="bg-white border border-slate-300 rounded pl-8 pr-2.5 py-1 text-xs font-mono text-slate-900 placeholder:text-slate-400 focus:outline-none focus:border-[#356B7A] w-64"
             />
           </div>
         </div>

@@ -4,14 +4,97 @@
 
 :root {
   color-scheme: light;
+  --app-bg: #F4F6F8;
+  --card-bg: #FFFFFF;
+  --primary-text: #17212B;
+  --secondary-text: #667685;
+  --border-color: #D8E0E6;
+
+  --brand-primary: #356B7A;
+  --brand-dark: #285664;
+  --brand-light: #E8F0F2;
+
+  --action-cta: #C87916;
+  --action-cta-hover: #A96210;
+
+  --status-success: #23805A;
+  --status-warning: #C58A20;
+  --status-critical: #C34B4B;
+
+  --sidebar-bg: #202A33;
+  --sidebar-active-bg: #30424F;
+  --sidebar-text: #B9C5CE;
+  --sidebar-muted: #AEBBC5;
+  --sidebar-active-text: #FFFFFF;
+  --sidebar-border: #2B3844;
+}
+
+/* Industrial Graphite-Steel Navigation Sidebar */
+.sidebar-container {
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--sidebar-border);
+}
+
+.sidebar-header {
+  border-bottom: 1px solid var(--sidebar-border);
+}
+
+.sidebar-title {
+  color: var(--sidebar-active-text);
+}
+
+.sidebar-subtitle,
+.sidebar-section-heading {
+  color: var(--sidebar-muted);
+}
+
+.sidebar-nav-link {
+  color: var(--sidebar-text);
+  background-color: transparent;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.sidebar-nav-link:hover {
+  background-color: rgba(48, 66, 79, 0.7);
+  color: var(--sidebar-active-text);
+}
+
+.sidebar-nav-link.active,
+.sidebar-nav-link[aria-current="page"] {
+  background-color: var(--sidebar-active-bg) !important;
+  color: var(--sidebar-active-text) !important;
+  font-weight: 600;
+}
+
+.sidebar-nav-link .sidebar-icon {
+  color: var(--sidebar-text);
+  transition: color 0.15s ease;
+}
+
+.sidebar-nav-link:hover .sidebar-icon {
+  color: var(--sidebar-active-text);
+}
+
+.sidebar-nav-link.active .sidebar-icon,
+.sidebar-nav-link[aria-current="page"] .sidebar-icon {
+  color: var(--sidebar-active-text) !important;
+}
+
+.sidebar-footer {
+  border-top: 1px solid var(--sidebar-border);
+  color: var(--sidebar-muted);
+}
+
+.sidebar-facility-name {
+  color: #D8E0E6;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background-color: #F5F6F8;
-  color: #0F172A;
+  background-color: var(--app-bg);
+  color: var(--primary-text);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -21,22 +104,22 @@ body {
   height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #F1F5F9;
+  background: #F4F6F8;
 }
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
+  background: #CBD5DE;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+  background: #8E9DAA;
 }
 
 /* Professional Enterprise Card */
 .enterprise-card {
-  background-color: #FFFFFF;
-  border: 1px solid #E2E8F0;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 6px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0 1px 2px 0 rgba(23, 33, 43, 0.03);
 }
 
 /* Standard Table Styles */
@@ -49,28 +132,28 @@ body {
 
 .enterprise-table th {
   background-color: #F8FAFC;
-  color: #475569;
+  color: #465563;
   font-weight: 600;
   font-size: 0.6875rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: 0.625rem 0.75rem;
-  border-bottom: 1px solid #E2E8F0;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .enterprise-table td {
   padding: 0.625rem 0.75rem;
-  border-bottom: 1px solid #F1F5F9;
-  color: #1E293B;
+  border-bottom: 1px solid #EDF2F7;
+  color: var(--primary-text);
 }
 
 .enterprise-table tbody tr:hover {
   background-color: #F8FAFC;
 }
 
-/* Buttons */
+/* Primary Action CTA Button */
 .btn-primary {
-  background-color: #D97706;
+  background-color: var(--action-cta);
   color: #FFFFFF;
   font-weight: 600;
   border-radius: 4px;
@@ -82,13 +165,14 @@ body {
   transition: background-color 0.15s ease-in-out;
 }
 .btn-primary:hover {
-  background-color: #B45309;
+  background-color: var(--action-cta-hover);
 }
 
+/* Secondary Neutral Button */
 .btn-secondary {
   background-color: #FFFFFF;
-  color: #334155;
-  border: 1px solid #CBD5E1;
+  color: var(--primary-text);
+  border: 1px solid var(--border-color);
   font-weight: 500;
   border-radius: 4px;
   padding: 0.4375rem 0.875rem;
@@ -100,6 +184,33 @@ body {
 }
 .btn-secondary:hover {
   background-color: #F8FAFC;
-  border-color: #94A3B8;
-  color: #0F172A;
+  border-color: #CBD5DE;
+  color: var(--primary-text);
+}
+
+/* Brand Button (Steel Blue) */
+.btn-brand {
+  background-color: var(--brand-primary);
+  color: #FFFFFF;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 0.4375rem 0.875rem;
+  font-size: 0.8125rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  transition: background-color 0.15s ease-in-out;
+}
+.btn-brand:hover {
+  background-color: var(--brand-dark);
+}
+
+/* Brand Steel Blue Link */
+.brand-link {
+  color: var(--brand-primary);
+  font-weight: 500;
+  transition: color 0.15s ease-in-out;
+}
+.brand-link:hover {
+  color: var(--brand-dark);
 }

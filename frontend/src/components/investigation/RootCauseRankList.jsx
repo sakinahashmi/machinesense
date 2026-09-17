@@ -39,7 +39,7 @@ export default function RootCauseRankList({ rankings = [], selectedIndex = 0, on
                   key={cause.root_cause}
                   onClick={() => onSelectCause(idx)}
                   className={`cursor-pointer transition-colors ${
-                    isSelected ? 'bg-amber-50/80 font-medium' : ''
+                    isSelected ? 'bg-[#E8F0F2] font-medium' : ''
                   }`}
                 >
                   <td className="text-center font-mono font-semibold text-slate-700">
@@ -51,7 +51,7 @@ export default function RootCauseRankList({ rankings = [], selectedIndex = 0, on
                         {cause.root_cause}
                       </span>
                       {isTop && (
-                        <span className="text-[10px] font-semibold px-1.5 py-0.2 rounded bg-amber-100 text-amber-900 border border-amber-300">
+                        <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-[#E8F0F2] text-[#356B7A] border border-[#B8D2D9]">
                           Primary
                         </span>
                       )}
@@ -62,7 +62,7 @@ export default function RootCauseRankList({ rankings = [], selectedIndex = 0, on
                       <div className="w-16 h-1.5 bg-slate-100 rounded-full overflow-hidden border border-slate-200">
                         <div
                           className={`h-full ${
-                            isTop ? 'bg-amber-600' : 'bg-slate-500'
+                            isTop ? 'bg-[#356B7A]' : 'bg-[#667685]'
                           }`}
                           style={{ width: `${cause.confidence}%` }}
                         />
@@ -74,9 +74,9 @@ export default function RootCauseRankList({ rankings = [], selectedIndex = 0, on
                   </td>
                   <td className="text-xs text-slate-600">
                     {cause.confidence_level === 'HIGH CONFIDENCE' ? (
-                      <span className="text-red-700 font-medium">Strong</span>
+                      <span className="text-[#C34B4B] font-medium">Strong</span>
                     ) : cause.confidence_level === 'MEDIUM-HIGH' || cause.confidence_level === 'MEDIUM' ? (
-                      <span className="text-amber-800 font-medium">Supporting</span>
+                      <span className="text-[#C58A20] font-medium">Supporting</span>
                     ) : (
                       <span className="text-slate-500 font-normal">Weak</span>
                     )}
